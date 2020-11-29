@@ -1,8 +1,8 @@
 EMCC := emcc
-CFLAGS := -Os -g $(CFLAGS)
+CFLAGS := -Os $(CFLAGS)
 LDFLAGS := -Iinclude/ $(LDFLAGS)
 EMLIBFLAGS := --no-entry $(EMFLAGS)
-EMRUNFLAGS := $(EMFLAGS)
+EMRUNFLAGS := -s ENVIRONMENT=node $(EMFLAGS)
 
 OUT = out
 JSOUT = jsout

@@ -2,11 +2,8 @@
 #include "lib.h"
 
 int main() {
-  char some_str[] = "testing...";
+  char *some_str = "testing...";
   replace_dots(some_str);
-
   printf("%s\n", some_str);
-  
-  printf("%s\n", get_magic_str());
   return 0;
 }
